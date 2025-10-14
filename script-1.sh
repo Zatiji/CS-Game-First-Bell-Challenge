@@ -4,7 +4,8 @@ echo "Reading file and showing all lines (including empty ones):"
 echo "---------------------------------"
 line_number=1
 while read -r line; do
-    echo line
+    echo "$line"
+    ((line_number++))
 done < "customer_profiles.txt"
 echo "---------------------------------"
 
